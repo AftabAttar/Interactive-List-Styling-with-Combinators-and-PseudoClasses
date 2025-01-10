@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .interactive-list li:first-child {
+        font-weight: bold;
+      }
+
+      .interactive-list li:first-child + li {
+        background-color: #f0f8ff;
+      }
+
+      .interactive-list li:nth-child(3) ~ li {
+        font-style: italic;
+      }
+
+      .interactive-list li:hover {
+        color: #ff6347;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Interactive List</h1>
+    <ol class="interactive-list">
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+      <li>Fourth Item</li>
+      <li>Fifth Item</li>
+    </ol>
+  </body>
+</html>
